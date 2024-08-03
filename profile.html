@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compactible" content="IE=edge">
+        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="profile.css">
+        <title>Profile</title>
+    </head>
+ 
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <div class="icon">
+                  <h2 class="logo">SOMA ULIPO</h2>
+                </div>
+      
+                <div class="menu">
+                  <ul>
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">VIDEO</a></li>
+                      <li><a href="#">GIFT</a></li>
+                      <li><a href="#" class="active">PROFILE</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="all">
+            <div class="column"> 
+                <div class="front">
+                  <div class="foward">
+                    <img src="soma.png" id="profile-pic">
+                    <label for="input-file">Upload Image</label>
+                    <input type="file" accept="image/jpeg, image/jpg, image/jfif, image/png" id="input-file">
+                    <div class="user"><span>User Name</span></div>
+                    <script>
+  
+                      let profilePic = document.getElementById("profile-pic");
+                      let inputFile = document.getElementById("input-file");
+  
+                      inputFile.onchange = function(){
+                        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+                      }
+                    </script>
+                
+                </div>
+                </div>
+            </div>
+           <div class="details"> 
+            
+        </div>
+    </div>
+                 
+    </body>
+</html>

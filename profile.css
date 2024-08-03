@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(4.JFIF);
+    background-position: center;
+    background-size: cover;
+    height: 190vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 10%px;
+    float: left;
+    height: 700px;
+}
+
+.logo{
+    color: blue;
+    font-size: 35px;
+    font-family: 'Bauhaus 93';
+    padding-left: 20px;
+    float: left;
+    padding top: 10px ;
+}
+
+.menu{
+    width: 400px;
+    float: right;
+    height: 70px;
+}
+
+ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+.link:hover, .active{
+    border-bottom: 2px solid blue;  
+    transition: .4s ease-in-out;
+}
+.content h1{
+    font-family:'Chiller';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.glow{
+    color: goldenrod;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+    from{
+        text-shadow: 0 0 10px blue, 0 0 20px greenyellow, 0 0 30px black, 0 0 40px grey, 0 0 50px pink, 0 0 60px red, 0 0 70px blue;
+
+    }
+    to{
+        text-shadow: 0 0 20px green, 0 0 30px #ff4da6, 0 0 40px , 0 0 50px aquamarine, 0 0 60px #6e5e00, 0 0 70px #490000, 0 0 80px #d5ff4d;
+    }
+}
+.all{
+    width: 900px;
+    height: 400px;
+    background: ;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-left: 500px;
+    right: 50%;
+    float: center;
+    background-color: blue;
+    padding: 40px;
+    border-radius: 20px;
+    padding-bottom: 1000px;
+    align-self: center;
+    float: center;
+}
+.front{
+    width: 1000px;
+    height: 500x;
+    background: ;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin-left: 500px;
+    right: 50%;
+    float: center;
+    padding-right: 490px;
+}
+
+.foward{
+    width: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #333;
+    right: 50%;
+    padding-left: 30px;
+    float: left;
+    position: static;
+}
+
+.foward h1{
+    font-weight: 500;
+    color: #000;
+}
+
+.foward img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin bottom: 30px;
+}
+
+label{
+    display: block;
+    width: 200px;
+    background: #ff7200;
+    color: aliceblue;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input{
+    display: none;
+}
+.user{
+    font-weight: bold;
+    font-family: 'Forte';
+    font-size: large;
+}
+
+.details{
+    background-color: whitesmoke;
+    width: 250px;
+}
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255,255,255,0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(25px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255,255,255,0.15);
+    }
+}
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 670px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+    }
+}

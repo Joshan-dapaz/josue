@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Soma Ulipo</title>
+    
+    <body >
+        <center>
+        <div class="icon">
+            <img src="soma.png">
+                
+        </div>
+        <div class="txt">
+            <span>SOMA ULIPO </span>
+        </div>
+        
+        <div class="bot">
+            <hr>
+            <span>Joshan</span>
+        </div>
+    </center>
+       <style>
+        .icon{
+          padding-top: 5% ; 
+        }
+        .txt{
+            font-size: 50px;
+            font-family: "bauhaus 93";
+        }
+        .bot{
+            padding-top: 24%;
+            font-family: "forte";
+            font-size: 20px;
+        }
+       </style>
+       <script>
+        var second=0;
+        function displayseconds()
+        {
+            second +=1;
+            document.getElementById(login);
+        }
+        setInterval(displayseconds,4000);
+
+        function redirectpage()
+        {
+            window.location="login.html";
+        }
+        setTimeout('redirectpage()',8000)
+       </script>
+</html>
